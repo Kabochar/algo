@@ -232,7 +232,6 @@ func InitLinkedList() {
 	list.InsertToTail(2)
 	list.Print()
 
-
 	list.Reverse()
 	list.Print()
 }
