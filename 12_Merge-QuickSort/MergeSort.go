@@ -1,4 +1,4 @@
-package main
+package MergeSort
 
 // 排序一个数组
 // 先把数组从中间分成前后两部分

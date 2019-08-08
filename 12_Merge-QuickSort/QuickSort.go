@@ -1,4 +1,4 @@
-package main
+package MergeSort
 
 // 快速排序
 func QuickSort(arr []int) {
