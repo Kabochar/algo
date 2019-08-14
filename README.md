@@ -10,5 +10,6 @@
 
 题目解析：参考，https://github.com/aQuaYi/LeetCode-in-Go
 
+CartoonAlgo：题目来源：《漫画算法》 - 小灰的算法之旅
 
-谢谢两位大佬的整理分享
+谢谢各位大佬的整理分享
