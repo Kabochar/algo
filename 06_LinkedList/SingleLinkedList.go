@@ -30,7 +30,7 @@ func NewLinkedList() *LinkedList {
 	}
 }
 
-//节点前添加
+// 节点前添加
 func (l *LinkedList) InsertAfter(p *ListNode, v interface{}) bool {
 	if nil == p {
 		return false

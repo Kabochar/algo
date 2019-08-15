@@ -1,7 +1,7 @@
 package Leetcode
 
-//要求：把数据旋转k步
-//注意：边界处理问题
+// 要求：把数据旋转k步
+// 注意：边界处理问题
 func rotate(nums []int, k int) {
 	lens := len(nums)
 

@@ -79,10 +79,3 @@ func postOrderTraversal(root *TreeNode) []int {
 	res = append(res, root.Val)
 	return res
 }
-
-
-
-
-
-
-

@@ -15,15 +15,15 @@ func gcd(ap, bp int) int {
 	if (ap&1) == 0 && (bp&1) == 0 {
 		return gcd(ap>>1, bp>>1) << 1
 
-	// a 偶，b 奇，gcd(a, b) = gcd(a>>1, b)
+		// a 偶，b 奇，gcd(a, b) = gcd(a>>1, b)
 	} else if (ap&1) == 0 && (bp&1) != 0 {
 		return gcd(ap>>1, bp)
 
-	// a 奇，b 偶，gcd(a, b) = gcd(a, b>>1)
+		// a 奇，b 偶，gcd(a, b) = gcd(a, b>>1)
 	} else if (ap&1) != 0 && (bp&1) == 0 {
 		return gcd(ap, bp>>1)
 
-	// a 奇，b 奇，更相减损术运算一次，再 gcd(a, b) = gcd(b, a-b)
+		// a 奇，b 奇，更相减损术运算一次，再 gcd(a, b) = gcd(b, a-b)
 	} else {
 		if ap > bp {
 			big, small = ap, bp
@@ -34,4 +34,3 @@ func gcd(ap, bp int) int {
 		return gcd(big-small, small)
 	}
 }
-
