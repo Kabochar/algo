@@ -1,6 +1,6 @@
 package Leetcode
 
-// 要求：把数据旋转k步
+// 要求：把数据旋转 k 步
 // 注意：边界处理问题
 func rotate(nums []int, k int) {
 	lens := len(nums)
@@ -15,8 +15,8 @@ func rotate(nums []int, k int) {
 	}
 
 	reverse(nums, 0, lens-1) // 整体翻转
-	reverse(nums, 0, k-1)    // 前 k-1位翻转
-	reverse(nums, k, lens-1) // k - lens 位翻转
+	reverse(nums, 0, k-1)    // 前 k-1 位翻转
+	reverse(nums, k, lens-1)    // k-lens 位翻转
 }
 
 // 翻转

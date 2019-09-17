@@ -1,6 +1,6 @@
 package Leetcode
 
-// 要求：将 nums1 nums2 前n项合并，放入 nuns1 中
+// 要求：将 nums1 nums2 前 n 项合并，放入 nuns1 中
 // 注意：使用 j, k 动态指针进行合并
 func merge(nums1 []int, m int, nums2 []int, n int) {
 	// 深拷贝 nums1 - 完全拷贝

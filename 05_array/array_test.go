@@ -1,9 +1,11 @@
 package main
 
-import "testing"
+import (
+	"testing"
+)
 
 func TestInsert(t *testing.T) {
-	capacity := 10
+	capacity := 5
 	arr := NewArray(uint(capacity))
 	for i := 0; i < capacity-2; i++ {
 		err := arr.InsertToIndex(uint(i), i+1)
@@ -13,7 +15,7 @@ func TestInsert(t *testing.T) {
 	}
 	arr.Print()
 
-	arr.InsertToIndex(uint(6), 999)
+	arr.InsertToIndex(uint(1), 999)
 	arr.Print()
 
 	arr.InsertToTail(666)

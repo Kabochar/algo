@@ -1,4 +1,10 @@
-package Leetcode
+package main
+
+import "fmt"
+
+func main() {
+	moveZeroes([]int{0,1,0,3,12})
+}
 
 // 要求：把非零的数前置
 // 注意：数组前面是非零的
@@ -21,4 +27,6 @@ func moveZeroes(nums []int) {
 		nums[i] = 0
 		i++
 	}
+
+	fmt.Println(nums)
 }
