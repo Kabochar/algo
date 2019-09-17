@@ -30,7 +30,7 @@ func NewLinkedList() *LinkedList {
 	}
 }
 
-// 节点前添加
+// 节点后添加
 func (l *LinkedList) InsertAfter(p *ListNode, v interface{}) bool {
 	if nil == p {
 		return false
@@ -45,7 +45,7 @@ func (l *LinkedList) InsertAfter(p *ListNode, v interface{}) bool {
 	return true
 }
 
-// 节点后添加
+// 节点前添加
 func (l *LinkedList) InsertBefore(p *ListNode, v interface{}) bool {
 	if nil == p || p == l.head {
 		return false
@@ -199,7 +199,7 @@ func (l *LinkedList) FindMiddleNode() *ListNode {
 	return slow
 }
 
-// 删除第 N个节点
+// 删除第 N 个节点
 func (l *LinkedList) DeleteBottomN(n int) bool {
 	if n < 0 || nil == l.head || nil == l.head.next {
 		return false
@@ -233,6 +233,9 @@ func InitLinkedList() {
 	list.Print()
 
 	list.Reverse()
+	list.Print()
+
+	list.DeleteBottomN(2)
 	list.Print()
 }
 

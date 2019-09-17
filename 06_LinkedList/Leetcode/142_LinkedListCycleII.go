@@ -8,7 +8,7 @@ func detectCycle(head *ListNode) *ListNode {
 		return nil
 	}
 
-	slow, fast := head.Next, head.Next.Next
+	slow, fast := head.Next, head.Next.Next // 使用快慢指针操作
 	for fast != nil && fast.Next != nil && slow != fast {
 		slow = slow.Next
 		fast = fast.Next.Next

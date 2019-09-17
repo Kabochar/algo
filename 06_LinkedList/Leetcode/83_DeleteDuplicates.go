@@ -1,5 +1,6 @@
 package Leetcode
 
+// 要求：移除重复元素
 func deleteDuplicates(head *ListNode) *ListNode {
 	// 健壮性判断
 	if head == nil {

@@ -14,7 +14,7 @@ func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
 	// 头结点最小的作为 head
 	// head 作为 头，cur 作为连接器，不断游走在 l1,l2 之间
 	var head, cur *ListNode
-	if l1.Val < l2.Val {
+	if l1.Val < l2.Val { // l1 头结点小的时候
 		head = l1
 		cur = l1
 		l1 = l1.Next
@@ -34,7 +34,7 @@ func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
 			l2 = l2.Next
 		}
 		// 关键，cur 要不断前进
-		// 保证 head节点形成完整链表
+		// 保证 head 节点形成完整链表
 		cur = cur.Next
 	}
 
